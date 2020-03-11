@@ -1,0 +1,88 @@
+
+</!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Boxing Game!
+		</title>
+
+		<style>
+			body {
+				background-color:#282830;
+			}
+			#startgame {
+				background-color:white; 
+				border: black; 
+				padding: 33px; 
+				margin: 15px 30px 1px 515px;
+			}
+			.div1 {
+				float: left;
+				margin-left: 490px;
+				margin-top: 30px;
+			}
+			.div2 {
+				margin-left: 450px;
+				margin-top: 100px;
+				color:white;
+				font-family: Alethia next;
+				font-size: 15px;
+			}
+			button {
+				border-radius: 2.5px;
+				background-color: transparent;
+				color: white;
+			  	border: 2px solid white;
+			  	transition-duration: 0.3s;
+			  	outline: 0;
+			}
+			button:hover {
+ 			background-color: white;
+  			color: #F2828D;
+			}
+			#toss1 {
+				width:25px;
+				height:20px;
+			}
+			#toss1:hover {
+			background-color: #F2828D;
+			color: white;
+			}
+			#button1, #button2 {
+				width: 80px;
+				height: 18px;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<button id="startgame" onclick="Main()" disabled> START GAME! </button>
+	
+		<p style="color:#F2828D; font-family: calibri; font-size: 10px; margin-left: 510px;"> Hover mouse on the white shape above <br> &emsp;&ensp;then click the pink button below </p>
+		
+		<button id="toss1" onclick="Toss()" style="color:white; border: 1px solid #F2828D; margin-left:-140px; font-family:calibri; font-size:12px;"> <p id="toss2" style="margin-top:0px;margin-left: 30px;"> TOSS </p> </button>
+
+		<div class="div1">
+		<button onclick="playerp()" id="b1"> <p id="button1"> PUNCH </p> </button> &ensp;
+		<button onclick="playerd()" id="b2"> <p id="button2"> DEFEND </p> </button>
+		</div>
+
+		<div class="div2">
+		<b> Player's hp: </b> 
+		<span id="blank"> </span>
+		&emsp;&emsp;&emsp;&emsp;
+		<b> AI's hp: </b>
+		<span id="blank1"> </span>
+
+		<br> <br>
+		Player Move:
+		<span id="actionofplayer"> </span>
+		&emsp;&emsp;&emsp;&emsp;
+		AI Move:
+		<span id="actionofai"> </span>
+		</div>
+
+		<script src="game1.js">	</script>
+	</body>
+</html>
